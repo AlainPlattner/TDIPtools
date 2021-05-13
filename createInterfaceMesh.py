@@ -24,7 +24,7 @@ def createInterfaceMesh(data, filename, delimiter='\t', **kwargs):
     """
 
     # Load coordinates of interface
-    interf =  np.loadtxt(filename, delimiter)  
+    interf =  np.loadtxt(filename, delimiter=delimiter)  
 
     # Create PLC from the interface coordinates
     intPoly = pg.meshtools.createPolygon(verts=interf, isClosed=False)
